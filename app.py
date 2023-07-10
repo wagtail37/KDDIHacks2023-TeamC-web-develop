@@ -75,13 +75,13 @@ def event(id):
 @app.route("/question", methods=["GET"])
 def question():
     # 各種情報を設定
-    YOUR_RESOURCE_NAME = "sample-ken-UK"
-    YOUR_DEPLOYMENT_NAME = "sample-ken-deploy"
-    YOUR_API_KEY = "24959fc582944f77ac07cb77da6b8c0f"
-    YOUR_RESOURCE_URL = "https://sample-ken-uk.openai.azure.com"
-    YOUR_AZURE_COGNITIVE_SEARCH_ENDPOINT = "https://cogsearch-uk.search.windows.net/"
-    YOUR_AZURE_COGNITIVE_SEARCH_KEY = "XOVwE9qDvD0UznBSYTfG84I2BTH3PO77lLVJcbjSUcAzSeBSRg4f"
-    YOUR_AZURE_COGNITIVE_SEARCH_INDEX_NAME = "index"
+    YOUR_RESOURCE_NAME = "YOUR_RESOURCE_NAME"#openaiモデル
+    YOUR_DEPLOYMENT_NAME = "YOUR_DEPLOYMENT_NAME"#openaiモデルのデプロイ名
+    YOUR_API_KEY = "YOUR_API_KEY"
+    YOUR_RESOURCE_URL = "YOUR_RESOURCE_URL"#https://YOUR_RESOURCE_NAME.openai.azure.com
+    YOUR_AZURE_COGNITIVE_SEARCH_ENDPOINT = "https://cogsearch-uk.search.windows.net/"#https://COGNITIVE_SEARCH_NAME.search.windows.net/
+    YOUR_AZURE_COGNITIVE_SEARCH_KEY = "YOUR_AZURE_COGNITIVE_SEARCH_KEY"
+    YOUR_AZURE_COGNITIVE_SEARCH_INDEX_NAME = "YOUR_AZURE_COGNITIVE_SEARCH_INDEX_NAME"
 
     # URLを設定
     url = f"{YOUR_RESOURCE_URL}/openai/deployments/{YOUR_DEPLOYMENT_NAME}/extensions/chat/completions?api-version=2023-06-01-preview"
